@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+body{
+    font-family: 'Righteous', cursive;
+}
+
+header .bg-port-f{
+    background: #2b4f7f;
+}
+
+header nav .container .navbar-collapse{
+    justify-content: flex-end;
+}
+
+header .navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+
+header .navbar-dark .navbar-nav .nav-link:hover{
+    color: yellow;
+}
+
+header nav .logo img{
+    max-width: 180px;
+}
+
+#welcome{
+    width: 100%;
+    padding: 60px 0;
+    background: #fff;
+}
+
+#welcome  .tarjeta-f{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#welcome .tarjeta-f .title{
+    background: #3f9fd1;
+    padding: 10px 0;
+}
+
+#welcome .tarjeta-f .title span{
+    color: #fff;
+    font-size: 30px;
+}
+
+#welcome .tarjeta-f .title h3{
+    color: #fff;
+    font-size: 23px;
+    margin-top: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#welcome .tarjeta-f .cont-text{
+    padding: 14px 10px;
+    background: #68b8d6;
+}
+
+#welcome .tarjeta-f .cont-text p{
+    color: #ffff;
+    font-weight: 300;
+}
+
+#welcome .tarjeta-f .cont-text a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#data{
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    background: url(../img/data-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    margin: 40px 0;
+}
+
+#data::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #3f9fd18c;
+    content: "";
+    left: 0;
+    top: 0;
+}
+
+#data .item-data{
+    text-align: center;
+    color: #ffff;
+}
+
+#data .item-data span{
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#data .item-data h3{
+    margin-bottom: 0px;
+}
+
+#services{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+}
+
+#services .item-services{
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: 2s;
+    cursor: pointer;
+}
+#services .item-services:hover  .cont-title{
+    height: 100%;
+    display: block;
+    padding-top: 50px;
+}
+
+#services .item-services:hover p{
+    bottom: 100px;
+}
+#services .item-services img{
+    max-width: 100%;
+}
+
+#services .item-services p{
+    position: absolute;
+    bottom: -90px;
+    color: #ffff;
+    transition: 2s;
+}
+
+#services .item-services .cont-title{
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    /* display: flex; */
+    justify-content: space-between;
+    background:#213666f0;
+    padding: 20px;
+    align-items: center;
+    color: #fff;
+    transition: 2s;
+}
+#services .item-services .cont-title span, #services .item-services .cont-title h3{
+    transition: 2s;
+}
+header{
+    position: relative;
+}
+
+header .text-header{
+    position: absolute;
+    top: 48%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+header .text-header h2{
+    color: #ffff;
+    font-size: 50px;
+}
+
+header .text-header p{
+    color: #ffff;
+}
+
+header #carouselHeader{
+    position: relative;
+}
+
+/* header #carouselHeader::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:  #3f9fd18c;
+    content: "";
+} */
+
+header .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+#redes{
+    text-align: center;
+    padding: 60px 0;
+}
+
+#redes .w-button{
+    position: fixed;
+    right: 0px;
+    bottom: 150px;
+    z-index: 9;
+}
+
+#redes .w-button a img{
+    width: 60px;
+}
+
+footer{
+    background: #2b4f7f;
+    padding: 100px 0;
+}
+
+footer img{
+    width: 30px;
+}
+
+h2{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+
+#carouselHeader{
+    position: relative;
+}
+
+
+
+
+/* CÓDIGO RESPONSIVE TABLET  */
+@media screen and (max-width:990px) and (min-width:768px){
+    #services .item-services p{
+        bottom: -200px;
+    }
+    #services .item-services:hover p{
+        bottom: -11px;
+    }
+    header .text-header{
+        display: none;
+    }
+    #welcome .tarjeta-f .title{
+        background: red;
+    }
+
+    #services .item-services img{
+        border-radius: 20px;
+    }
+}
+
+/* CÓDIGO RESPONSIVE PHONE */
+@media screen and (max-width:600px) and (min-width:320px){
+    header .text-header{
+        display: none;
+    }
+
+    header #carouselHeader{
+        margin-top: 60px;
+    }
+
+    #services .item-services .cont-title{
+        width: 92%;
+    }
+    #redes .w-button{
+
+    }
+}
